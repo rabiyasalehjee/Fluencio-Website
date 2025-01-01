@@ -3,29 +3,15 @@
 
 <head lang="en">
 
-    <!-- required html meta tags -->
     <meta charset="utf-8">
-    
-    <!-- meta tags for SEO.--> 
-    <!-- The description meta tag defines the description for a webpage. -->
-    <!-- The keywords meta tag defines keywords for search engines. -->
     <meta name="description" content="Speech recognizer application to help you avoid speech flaws and speak more fluently and effectively">
     <meta name="keywords" content="Fluencio, Speech evaluator application, speech recognition android application">
     
     <meta http-equiv="X-UA-C-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- title -->
     <title>
         Fluencio | Speak confidently and fluently
     </title>
-
-    <!-- Favicon, google fonts, fontawesome icons, bootstrap CSS, animate CSS, Magnific Popup core CSS file, Owl Carousel CSS file & Style CSS files linked to this html file -->
-
-    <!-- <link> tag defines the link between a document and an external resource. <rel> attribute defines the relationship between two documents-->
-    <!-- whatever we write in style.css will be applied to index.html file -->
-    <!-- We need to add google font before the style.css -->
-    <!-- Because Responsive.css will overwrite rules in style.css for certain media sizes, we will write it after style.css -->
     <link rel="icon" href="img/Fluencio/f_logo.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
@@ -36,53 +22,12 @@
     <link rel="stylesheet" href="css/owl-carousel/owl-carousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-
-    <!-- Bootstrap Link 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  -->
-
 </head>
 
-<!-- 
-Attributes added for scroll spy as per BS documentation
-We add the data offset attribute because the menu height causes the menu to be highlighted/be in the active state a little late 
-when we are already inside the corresponding part of the webpage.
-We see that the menu height is 65px and so we use data-offset attribute to compensate for it.
-Data-Offset value is the number of pixels to be offset when calculating the position of the scroll.
--->
-<!-- 
-<body data-spy="scroll" data-target=".vesco-top-navbar" data-offset="65"> Since we removed the .vesco-top-navbar -->
 
 <body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="65">
-
-    <!----------------- Header ---------------------->
-    <!--  
-        The Header is used for an introductory content or a set of Navigation links.
-    -->
     <header>
-
-        <!-- 
-        The <nav> tag is used to define a set of navigation links.
-        For Navigation: BS NavBar Component - class="navbar navbar-inverse navbar-default".
-        .navbar adds a white or blank navigation bar at the top of the webpage.
-        .navbar-inverse adds a black component in the navigation bar. 
-        .navbar-fixed-top fixes the navigation bar at the top even when scrolling down.
-        .navbar-header to represent logo inside this navbar.
-        .navbar-brand for the anchor element to include the logo.
-        .nav navbar-nav makes an ul a menu
-        <button .navbar-toggle collapsed ... > provides a collapsable navigation bar when viewed on small screens by controlling the menu id.
-        .collapse .navbar-collapse will allow the navigation bar to collapse.
-        .vesco-top-navbar is not a BS class and is a custom class to change the black background of top navbar & 
-        the toggle button provided by .navbar-inverse to a custom transparent one.
-        
-         -->
-        <!-- <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"> -->
-
-        <!-- We remove the .vesco-top-navbar to prevent having the black navigation bar upon page load. -->
-        <!-- <nav class="navbar vesco-top-navbar navbar-fixed-top" role="navigation"> -->
         <nav class="navbar navbar-fixed-top">
-
-            <!-- .container-fluid will take the full-width of the webpage -->
             <div class="container-fluid">
 
                 <div class="vesco-nav-wrapper">
@@ -104,11 +49,7 @@ Data-Offset value is the number of pixels to be offset when calculating the posi
                         <div style="margin-left: 70px; margin-top: 20px;">
                             <a href="#home" class="logo_name" style="text-decoration: none; color: #203063; font-size: 20px; font-weight: 700;">FLUENCIO</a>
                         </div>
-<!--
-    ON HOVER COLOR: #BAD4EF
-    LOGO DARKER COLOR: #203063
--->
-                    </div>
+              </div>
 
                     <div class="collapse navbar-collapse" id="vesco-menu-wrapper">
 
@@ -200,7 +141,7 @@ Data-Offset value is the number of pixels to be offset when calculating the posi
                             <h3>
                                 Public Speaking
                             </h3>
-                            <p class="text-center" style="line-height: 30px;">
+                            <p class="text-justify" style="line-height: 30px;">
                                 Fluencio provides an opportunity for the users to prepare themselves before any public speaking event. Prepare a speech, practice it, receive feedback, and improve. Thus deliver an impactful speech and leave the audience influenced and astonished.
                             </p>
                         </div>
@@ -223,7 +164,7 @@ Data-Offset value is the number of pixels to be offset when calculating the posi
                             <h3>
                                 Interview
                             </h3>
-                            <p class="text-center" style="line-height: 30px;">
+                            <p class="text-justify" style="line-height: 30px;">
                                 Fluencio provides an opportunity for the users to prepare themselves before any public speaking event. Prepare a speech, practice it, receive feedback, and improve. Thus deliver an impactful speech and leave the audience influenced and astonished.
                             </p>
                         </div>
@@ -236,7 +177,7 @@ Data-Offset value is the number of pixels to be offset when calculating the posi
                             <h3>
                                 Presentation
                             </h3>
-                            <p class="text-center" style="line-height: 30px;">
+                            <p class="text-justify" style="line-height: 30px;">
                                 Fluencio provides an opportunity for the users to prepare themselves before any public speaking event. Prepare a speech, practice it, receive feedback, and improve. Thus deliver an impactful speech and leave the audience influenced and astonished.
                             </p>
                     </div>
@@ -248,139 +189,6 @@ Data-Offset value is the number of pixels to be offset when calculating the posi
                     </div>
                 </div>
                
-
-                <!--  <div class="row">
-                    
-                   
-                        By adding col-sm-6, we can display 2 service items per row, which is what we want.
-                    -->
-
-                    <!-- BS Grid Col Group 1 
-
-                    <div class="col-md-4 col-sm-6">
-
-                        <div class="service-items wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-
-                            <div class="service-item-icon">
-                                <i class="fa fa-paint-brush fa-3x"></i>
-                            </div>
-                            <div class="service-item-title">
-                                <h3> Web Design </h3>
-                            </div>
-                            <div class="service-item-description">
-                                <p>lorem ipsum extension in the bracket is not working for me.</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    -->
-
-                    <!-- BS Grid Col Group 2 
-
-                    <div class="col-md-4 col-sm-6">
-
-                        <div class="service-items wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-
-                            <div class="service-item-icon">
-                                <i class="fa fa-laptop fa-3x"></i>
-                            </div>
-                            <div class="service-item-title">
-                                <h3> Web Development </h3>
-                            </div>
-                            <div class="service-item-description">
-                                <p>lorem ipsum extension in the bracket is not working for me.</p>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                    -->
-
-                    <!-- BS Grid Col Group 3 
-                    <div class="col-md-4 col-sm-6">
-
-                        <div class="service-items wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-
-                            <div class="service-item-icon">
-                                <i class="fa fa-mobile fa-3x"></i>
-                            </div>
-                            <div class="service-item-title">
-                                <h3> Mobile Apps </h3>
-                            </div>
-                            <div class="service-item-description">
-                                <p>lorem ipsum extension in the bracket is not working for me.</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    -->
-
-                    <!-- BS Grid Col Group 4 
-
-                    <div class="col-md-4 col-sm-6">
-
-                        <div class="service-items wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-
-                            <div class="service-item-icon">
-                                <i class="fa fa-search fa-3x"></i>
-                            </div>
-                            <div class="service-item-title">
-                                <h3> SEO Optimization </h3>
-                            </div>
-                            <div class="service-item-description">
-                                <p>lorem ipsum extension in the bracket is not working for me.</p>
-                            </div>
-
-                        </div>
-
-
-
-                    </div>
-                    -->
-                    <!-- BS Grid Col Group 5 
-                    <div class="col-md-4 col-sm-6">
-
-                        <div class="service-items wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-
-                            <div class="service-item-icon">
-                                <i class="fa fa-pencil-square-o fa-3x"></i>
-                            </div>
-                            <div class="service-item-title">
-                                <h3> UX Design </h3>
-                            </div>
-                            <div class="service-item-description">
-                                <p>lorem ipsum extension in the bracket is not working for me.</p>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                    -->
-                    <!-- BS Grid Col Group 6 
-                    <div class="col-md-4 col-sm-6">
-
-                        <div class="service-items wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-
-                            <div class="service-item-icon">
-                                <i class="fa fa-life-ring fa-3x"></i>
-                            </div>
-                            <div class="service-item-title">
-                                <h3> Support </h3>
-                            </div>
-                            <div class="service-item-description">
-                                <p>lorem ipsum extension in the bracket is not working for me.</p>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                    -->
-                    <!-- End of row class -->
                 </div>
                 <!-- End of container -->
             </div>
@@ -419,7 +227,7 @@ Data-Offset value is the number of pixels to be offset when calculating the posi
                                         <br>
                                         Our vision regarding Fluencio is ambitious. Fluencio is a complete package that helps in preparing for presentations and interviews. It records and analyzes the speech to highlight mistakes and provides useful feedback to users. It tracks user's performance as it is designed considering the common needs of the users. The application also includes a meditation feature for the users to overcome the fear of public speaking. 
                                         <br>
-                                        The product also involve the use of VR Headset to provide hardware support. VR provides an opportunity to simlulate the environments of presentations and interview. It provides a great aid to users in practicing speech in real-world scenarios. 
+                                        
                                     </p>
                                 </div>
 
@@ -456,9 +264,7 @@ Data-Offset value is the number of pixels to be offset when calculating the posi
                 <div class="row">
                     <div class="col-md-4 col-sm-4 content-sub-title">
                             <div class="service-items wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                            <!--<p class="text-center" style="line-height: 30px; margin-top: 30px">
-                                Allows you to record speech
-                            </p>-->
+
                             <ul style="list-style-type:none;">
                                 <li class="text-center feature-list">Allows you to record speech<i class="fa fa-arrow-right" aria-hidden="true" style="margin-left: 20px;"></i></li>
                                 <li class="text-center feature-list">Analyzes the audio input
@@ -475,9 +281,7 @@ Data-Offset value is the number of pixels to be offset when calculating the posi
                     </div>
                     <div class="col-md-4 col-sm-4 content-sub-title">
                             <div class="service-items wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                            <!--<p class="text-center" style="line-height: 30px; margin-top: 30px">
-                                Allows you to record speech
-                            </p>-->
+
                             <ul style="list-style-type:none;">
                                 <li class="text-center feature-list"><i class="fa fa-arrow-left" aria-hidden="true" style="margin-right:20px;"></i>Calculates pitch and pace of audio</li>
                                 <li class="text-center feature-list"><i class="fa fa-arrow-left" aria-hidden="true" style="margin-right:20px;"></i>Shows the results</li>
@@ -489,403 +293,12 @@ Data-Offset value is the number of pixels to be offset when calculating the posi
                 </div>
             </div>
 
-            <!-- BS Grid System -->
-
-            <!-- Container class in BS has fixed width while container-fluid cover full-width of the page 
             
-            <div class="container-fluid">
-                <div class="row no-gutters wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                    -->
-                    
-                    <!-- BS Grid - I 
-
-                    <div class="col-md-3 col-sm-4">
-                        <div class="image-wrapper">
-                            -->
-
-                            <!-- We use anchor element so as be able to use image magnifier & "img-responsive" is a predefined BS class for responsive images 
-
-                            <a href="img/work/1.jpg" title="Work Description Goes Here">
-                                <img src="img/work/1.jpg" class="img-responsive" alt="Work">
-                            </a>
-
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-3 col-sm-4">
-                        <div class="image-wrapper">
-                            -->
-
-                            <!-- We use anchor element so as be able to use image magnifier & "img-responsive" is a predefined BS class for responsive images 
-
-                            <a href="img/work/2.jpg" title="Work Description Goes Here">
-                                <img src="img/work/2.jpg" class="img-responsive" alt="Work">
-                            </a>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-4">
-                        <div class="image-wrapper">
-                            -->
-
-                            <!-- We use anchor element so as be able to use image magnifier & "img-responsive" is a predefined BS class for responsive images 
-
-                            <a href="img/work/3.jpg" title="Work Description Goes Here">
-                                <img src="img/work/3.jpg" class="img-responsive" alt="Work">
-                            </a>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-4">
-                        <div class="image-wrapper">
-                            -->
-
-                            <!-- We use anchor element so as be able to use image magnifier & "img-responsive" is a predefined BS class for responsive images 
-
-                            <a href="img/work/4.jpg" title="Work Description Goes Here">
-                                <img src="img/work/4.jpg" class="img-responsive" alt="Work">
-                            </a>
-
-                        </div>
-                    </div>
-                    -->
-                    
-                    <!-- BS Grid - II 
-
-                    <div class="col-md-3 col-sm-4">
-                        <div class="image-wrapper">
-                            -->
-
-                            <!-- We use anchor element so as be able to use image magnifier & "img-responsive" is a predefined BS class for responsive images 
-
-
-                            <a href="img/work/5.jpg" title="Work Description Goes Here">
-                                <img src="img/work/5.jpg" class="img-responsive" alt="Work">
-                            </a>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-4">
-                        <div class="image-wrapper">
-                            -->
-
-                            <!-- We use anchor element so as be able to use image magnifier & "img-responsive" is a predefined BS class for responsive images 
-
-                            <a href="img/work/6.jpg" title="Work Description Goes Here">
-                                <img src="img/work/6.jpg" class="img-responsive" alt="Work">
-                            </a>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-4">
-                        <div class="image-wrapper">
-                            -->
-
-                            <!-- We use anchor element so as be able to use image magnifier & "img-responsive" is a predefined BS class for responsive images 
-
-                            <a href="img/work/7.jpg" title="Work Description Goes Here">
-                                <img src="img/work/7.jpg" class="img-responsive" alt="Work">
-                            </a>
-
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-3 col-sm-4">
-                        <div class="image-wrapper">
-                            -->
-
-                            <!-- We use anchor element so as be able to use image magnifier & "img-responsive" is a predefined BS class for responsive images
-
-                            <a href="img/work/8.jpg" title="Work Description Goes Here">
-                                <img src="img/work/8.jpg" class="img-responsive" alt="Work">
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-             -->
-            <!--End of Content box-->
         </div>
 
     </section>
 
-    <!--------------- Team -----------------------
-    <section id="team">
-        -->
-
-        <!-- Content box, Content Title and Content underline are generic 
-
-        <div class="content-box">
-            <div class="content-title wow animated fadeInDown " data-wow-duration="1s" data-wow-delay=".5s">
-                <h3> Our Team </h3>
-                <div class="content-title-underline">
-                </div>
-            </div>
-            -->
-            <!-- BS Grid System 
-
-            <div class="container">
-                <div class="row wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                    -->
-
-                    <!-- Carousel Slider requires just one column 
-
-                    <div class="col-md-12">
-                        -->
-
-                        <!-- The team-member is the main wrapper for team members -->
-                        <!-- Need to add predefined class="owl-carousel" to set up HTML for OWL Carousel -->
-                        <!-- Need to add predefined class="owl-theme" for adding navigation dot through Owl CSS 
-
-                        <div id="team-members" class="owl-carousel owl-theme">
-                            -->
-
-
-
-                            <!------------------- TEAM MEMBERS START------------------------------------------------->
-
-
-
-                            <!-- This block will act as a single team member - Team Member: 1 
-
-                            <div class="team-member">
-                                -->
-
-                                <!-- Use BS img-responsive class 
-
-                                <img src="img/team/team-1.jpg" class="img-responsive" alt="team member">
-                                -->
-
-                                <!-- Create a separate block for textual information about the member and use BS predefined text-center 
-
-                                <div class="team-member-info text-center">
-
-                                    <h4 class="team-member-name"> Daniel Watrous </h4>
-                                    <h4 class="team-member-designation"> CEO </h4>
-                                    <ul class="social-list">
-
-                                        <li>
-                                            <a href="#" class="social-icon icon-grey">
-                                                <i class="fa fa-facebook">
-                                                </i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="social-icon icon-grey">
-                                                <i class="fa fa-twitter">
-                                                </i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="social-icon icon-grey">
-                                                <i class="fa fa-google-plus">
-                                                </i>
-                                            </a>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            -->
-
-
-
-                            <!-- This block will act as a single team member - Team Member: 2 
-
-                            <div class="team-member">
-                                -->
-
-                                <!-- Use BS img-responsive class 
-
-                                <img src="img/team/team-2.jpg" class="img-responsive" alt="team member">
-                                -->
-
-                                <!-- Create a separate block for textual information about the member and use BS predefined text-center 
-
-                                <div class="team-member-info text-center">
-
-                                    <h4 class="team-member-name"> Sara Smith </h4>
-                                    <h4 class="team-member-designation"> Co-Founder </h4>
-                                    <ul class="social-list">
-
-                                        <li>
-                                            <a href="#" class="social-icon icon-grey">
-                                                <i class="fa fa-facebook">
-                                                </i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="social-icon icon-grey">
-                                                <i class="fa fa-twitter">
-                                                </i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="social-icon icon-grey">
-                                                <i class="fa fa-google-plus">
-                                                </i>
-                                            </a>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            -->
-
-
-
-                            <!-- This block will act as a single team member - Team Member: 3 
-
-                            <div class="team-member">
-                                -->
-
-                                <!-- Use BS img-responsive class 
-
-                                <img src="img/team/team-3.jpg" class="img-responsive" alt="team member">
-                                -->
-
-                                <!-- Create a separate block for textual information about the member and use BS predefined text-center 
-
-                                <div class="team-member-info text-center">
-
-                                    <h4 class="team-member-name"> Steve Mike </h4>
-                                    <h4 class="team-member-designation"> Sr. Developer </h4>
-                                    <ul class="social-list">
-
-                                        <li>
-                                            <a href="#" class="social-icon icon-grey">
-                                                <i class="fa fa-facebook">
-                                                </i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="social-icon icon-grey">
-                                                <i class="fa fa-twitter">
-                                                </i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="social-icon icon-grey">
-                                                <i class="fa fa-google-plus">
-                                                </i>
-                                            </a>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            -->
-
-
-
-                            <!-- This block will act as a single team member - Team Member: 4 
-
-                            <div class="team-member">
-                                -->
-
-                                <!-- Use BS img-responsive class 
-
-                                <img src="img/team/team-4.jpg" class="img-responsive" alt="team member">
-                                -->
-
-                                <!-- Create a separate block for textual information about the member and use BS predefined text-center 
-
-                                <div class="team-member-info text-center">
-
-                                    <h4 class="team-member-name"> Robert Hinay </h4>
-                                    <h4 class="team-member-designation"> Sr. Designer </h4>
-                                    <ul class="social-list">
-
-                                        <li>
-                                            <a href="#" class="social-icon icon-grey">
-                                                <i class="fa fa-facebook">
-                                                </i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="social-icon icon-grey">
-                                                <i class="fa fa-twitter">
-                                                </i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="social-icon icon-grey">
-                                                <i class="fa fa-google-plus">
-                                                </i>
-                                            </a>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            -->
-
-
-
-                            <!-- This block will act as a single team member - Team Member: 5 
-
-                            <div class="team-member">
-                                -->
-
-                                <!-- Use BS img-responsive class 
-
-                                <img src="img/team/team-5.jpg" class="img-responsive" alt="team member">
-                                -->
-
-                                <!-- Create a separate block for textual information about the member and use BS predefined text-center 
-
-                                <div class="team-member-info text-center">
-
-                                    <h4 class="team-member-name"> Mika Tera </h4>
-                                    <h4 class="team-member-designation"> Sales </h4>
-                                    <ul class="social-list">
-
-                                        <li>
-                                            <a href="#" class="social-icon icon-grey">
-                                                <i class="fa fa-facebook">
-                                                </i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="social-icon icon-grey">
-                                                <i class="fa fa-twitter">
-                                                </i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="social-icon icon-grey">
-                                                <i class="fa fa-google-plus">
-                                                </i>
-                                            </a>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            -->
-
-
-
-                            <!------------------- TEAM MEMBERS END -----------------------------------------------
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            -->
-            <!--End of Content box
-        </div>
-
-    </section>
-    -->
+    
 
     <!--------------- Testimonials ------------------------->
     <section id="testimonials">
@@ -993,338 +406,7 @@ Data-Offset value is the number of pixels to be offset when calculating the posi
 
     </section>
 
-    <!--------------- Pricing -----------------------
-    <section id="pricing">
-
-        -->
-
-
-        <!-- Content box, Content Title and Content underline are generic 
-
-        <div class="content-box">
-            <div class="content-title wow animated fadeInDown " data-wow-duration="1s" data-wow-delay=".5s">
-                <h3> Our Pricing </h3>
-                <div class="content-title-underline">
-                </div>
-            </div>
-            -->
-
-            <!-- BS Grid System 
-
-            <div class="container">
-
-                <div class="row">
-                    -->
-
-                    <!--
-                        Basic Pricing Column
-                   
-                    <div class="col-md-4 wow animated zoomIn" data-wow-duration="1s" data-wow-delay=".5s">
-                        <div class="pricing-box text-center">
-
-                            <h4 class="pricing-title">Basic</h4>
-                            <h3 class="pricing-value">49<sup>$</sup></h3>
-                            <ul class="pricing-spec">
-                                <li>
-                                    <p>500 Emails</p>
-                                </li>
-                                <li>
-                                    <p>5GB Disk Space</p>
-                                </li>
-                                <li>
-                                    <p>5GB Bandwidth</p>
-                                </li>
-                                <li>
-                                    <p>Unlimited Domains</p>
-                                </li>
-                            </ul>
-                            <div class="pricing-button">
-                                <a class="btn btn-lg btn-general btn-green smooth-scroll" href="#" role="button">
-                                    Purchase
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                     -->
-
-                    <!--
-                        Enterprice Pricing Column
-                    
-                    <div class="col-md-4 wow animated bounceInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                        <div class="pricing-box middle-large-pricing-box text-center">
-
-                            <h4 class="pricing-title">Enterprice</h4>
-                            <h3 class="pricing-value">89<sup>$</sup></h3>
-                            <ul class="pricing-spec">
-                                <li>
-                                    <p>200 Emails</p>
-                                </li>
-                                <li>
-                                    <p>25GB Disk Space</p>
-                                </li>
-                                <li>
-                                    <p>25GB Bandwidth</p>
-                                </li>
-                                <li>
-                                    <p>Unlimited Domains</p>
-                                </li>
-                            </ul>
-                            <div class="pricing-button">
-                                <a class="btn btn-lg btn-general btn-white smooth-scroll" href="#" role="button">
-                                    Purchase
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                    -->
-
-                    <!--
-                        Standard Pricing Column
-                    
-                    <div class="col-md-4 wow animated zoomIn" data-wow-duration="1s" data-wow-delay=".5s">
-                        <div class="pricing-box text-center">
-
-                            <h4 class="pricing-title">Standard</h4>
-                            <h3 class="pricing-value">69<sup>$</sup></h3>
-                            <ul class="pricing-spec">
-                                <li>
-                                    <p>1500 Emails</p>
-                                </li>
-                                <li>
-                                    <p>15GB Disk Space</p>
-                                </li>
-                                <li>
-                                    <p>15GB Bandwidth</p>
-                                </li>
-                                <li>
-                                    <p>Unlimited Domains</p>
-                                </li>
-                            </ul>
-                            <div class="pricing-button">
-                                <a class="btn btn-lg btn-general btn-green smooth-scroll" href="#" role="button">
-                                    Purchase
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            -->
-            <!--End of Content box
-        </div>
-
-    </section>
-    -->
-
-    <!--------------- Stats -----------------------
-    <section id="stats">
-        -->
-
-        <!-- Background/Cover Image over the entire content box - This is similar approach to Home Section 
-
-        <div id="stats-section-cover-image" class="bg-parallax">
-            -->
-
-
-            <!-- Content box, Content Title and Content underline are generic 
-
-            <div class="content-box">
-                <div class="content-title content-title-white wow animated fadeInDown " data-wow-duration="1s" data-wow-delay=".5s">
-                    <h3> We Never Stop Improving </h3>
-                    <div class="content-title-white-underline">
-                    </div>
-                </div>
-                -->
-
-                <!-- BS Grid System 
-
-                <div class="container">
-                    <div class="row text-center wow animated bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s">
-                        -->
-
-                        <!--
-                        STATS COLUMN - I
-                    
-
-                        <div class="col-md-3 col-sm-6">
-
-                            <div class="stats-item-wrapper">
-
-                                <i class="fa fa-cloud-download fa-5x"></i>
-
-                                <h2><span class="counter">1590</span><span>+</span></h2>
-
-                                <p>Downloads</p>
-
-                            </div>
-
-                        </div>
-                        -->
-
-                        <!--
-                        STATS COLUMN - II
-                    
-
-                        <div class="col-md-3 col-sm-6">
-
-                            <div class="stats-item-wrapper">
-
-                                <i class="fa fa-star-o fa-5x"></i>
-
-                                <h2><span class="counter">3500</span><span>+</span></h2>
-
-                                <p>Awards</p>
-
-                            </div>
-
-                        </div>
-                        -->
-
-                        <!--
-                        STATS COLUMN - III
-                    
-
-                        <div class="col-md-3 col-sm-6">
-
-                            <div class="stats-item-wrapper">
-
-                                <i class="fa fa-heart-o fa-5x"></i>
-
-                                <h2><span class="counter">1199</span><span>+</span></h2>
-
-                                <p>Likes</p>
-
-                            </div>
-
-                        </div>
-                        -->
-
-                        <!--
-                        STATS COLUMN - IV
-                    
-
-                        <div class="col-md-3 col-sm-6">
-
-                            <div class="stats-item-wrapper">
-
-                                <i class="fa fa-check fa-5x"></i>
-
-                                <h2><span class="counter">2200</span><span>+</span></h2>
-
-                                <p>Recommended</p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                -->
-                <!--End of Content box
-            </div>
-            -->
-            <!--End of Cover box
-        </div>
-
-
-    </section>
-    -->
-
-    <!--------------- Clients -----------------------
-    <section id="clients">
-        -->
-
-        <!-- Content box, Content Title and Content underline are generic 
-
-        <div class="content-box">
-            <div class="content-title wow animated fadeInDown " data-wow-duration="1s" data-wow-delay=".5s">
-                <h3> Clients </h3>
-                <div class="content-title-underline">
-                </div>
-            </div>
-
-            -->
-
-            <!-- BS Grid System 
-
-            <div class="container">
-                <div class="row wow animated bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s">
-
-                    <div class="col-md-12">
-
-                        <div id="clients-list-mainwrapper" class="owl-carousel owl-theme">
-
-                            -->
-
-                            <!-- Client - I 
-                            <div class="client">
-                                <img src="img/client/logos/logo-1.jpg" class="img-responsive" alt="client">
-                            </div>
-                            -->
-
-                            <!-- Client - II 
-                            <div class="client">
-                                <img src="img/client/logos/logo-2.jpg" class="img-responsive" alt="client">
-                            </div>
-                            -->
-
-                            <!-- Client - III 
-                            <div class="client">
-                                <img src="img/client/logos/logo-3.jpg" class="img-responsive" alt="client">
-                            </div>
-                            -->
-
-                            <!-- Client - IV 
-                            <div class="client">
-                                <img src="img/client/logos/logo-4.jpg" class="img-responsive" alt="client">
-                            </div>
-                            -->
-
-                            <!-- Client - V 
-                            <div class="client">
-                                <img src="img/client/logos/logo-5.jpg" class="img-responsive" alt="client">
-                            </div>
-                            -->
-
-                            <!-- Client - VI 
-                            <div class="client">
-                                <img src="img/client/logos/logo-6.jpg" class="img-responsive" alt="client">
-                            </div>
-                            -->
-
-                            <!-- Client - VII 
-                            <div class="client">
-                                <img src="img/client/logos/logo-7.jpg" class="img-responsive" alt="client">
-                            </div>
-                            -->
-
-                            <!-- Client - VIII 
-                            <div class="client">
-                                <img src="img/client/logos/logo-8.jpg" class="img-responsive" alt="client">
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-            -->
-            <!--End of Content box
-        </div>
-
-    </section>
-    -->
-
-    <!--------------- Footer ------------------------->
-    <!-- 
-        A <footer> element defines a footer for a webpage. It should contain information like, 
-        Contact, Site-Map, Back-To-Top link and Copyrights information.
-    -->
+    
     <footer>
 
         <!-- Footer Address & Contact Form -->
@@ -1383,16 +465,11 @@ Data-Offset value is the number of pixels to be offset when calculating the posi
                                     </li>
                                     <li>
                                         <a href="#" class="social-icon-footer icon-white">
-                                            <i class="fa fa-youtube-play">
+                                            <i class="fa fa-instagram">
                                             </i>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#" class="social-icon-footer icon-white">
-                                            <i class="fa fa-google-plus">
-                                            </i>
-                                        </a>
-                                    </li>
+
                                 </ul>
 
                             </div>
@@ -1405,10 +482,6 @@ Data-Offset value is the number of pixels to be offset when calculating the posi
                         <div id="contact-right-side-main-wrapper" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
 
                             <h3> CONTACT US </h3>
-
-                            <!-- 
-                                    In the action attribute, I can define the url value as to where to send the data collected from the form.
-                                -->
                             <form action="#">
 
                                 <input type="text" name="full-name" placeholder="Full Name" class="form-controller">
@@ -1445,9 +518,6 @@ Data-Offset value is the number of pixels to be offset when calculating the posi
                         </div>
 
                     </div>
-
-                    <!-- Footer Navigation Menu -->
-                    <!-- BS3 hidden-sm class hides the footer menu for small screen sizes. -->
                     <div class="col-md-6 hidden-sm hidden-xs">
                         <div id="footer-menu">
 
@@ -1465,43 +535,12 @@ Data-Offset value is the number of pixels to be offset when calculating the posi
                 </div>
             </div>
         </div>
-
-        <!-- Back To Top Button -->
-        
-        <!-- .btn and .btn-sm are BS predefined button classes -->
         <a href="#home" id="back-to-top" class="btn btn-sm btn-green button-back-to-top smooth-scroll hidden-sm hidden-xs" title="home" role="button">
             <i class="fa fa-angle-up"></i>
         </a>
 
 
     </footer>
-
-
-
-
-
-
-
-
-
-
-    <!-- Temporary breaks 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    -->
-
-
-
-
-
-
-    <!--------------- JQuery Libraries ------------------------->
-    <!-- JQuery, Bootstrap JS, WOW JS (for animate upon scroll), Magnific Popup core JS, Owl Carousel JS, Counter JS, JQuery Easing & custom JS -->
-
-    <!--
-        JQuery library script is appended/added first because we need bootstrap JS, WOW JS & custom.js file requires JQuery library.
-        custom JS Could be added in head section but devs prefer here just before </body> because we want the browser to render all the contents of the webpage and then load our JS file.
-        script tag is used to define the clientside JS 
-    -->
 
     <script src="js/jquery.js"></script>
 

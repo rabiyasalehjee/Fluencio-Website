@@ -1,46 +1,3 @@
-/*======================================================
-                     DEFAULT VALUES
-
-             Font Family:         Roboto Condensed Font
-   Alternate Font Family:         Sans-serif
-   
-           Greenish Blue:         #34c6d3              (Buttons, Icons, Links, Lines & Backgrounds)
-              Steel Grey:         #41464b              (Headings)
-             Blue Bayoux:         #64707b              (Paragraphs)
-                   White:         #fff                 (Text with Black Backgrounds)
-                   Black:         #000
-
-=======================================================*/
-
-/*===========================================================
-                    BASIC INFORMATION
-
-***> Inline elements in HTML:
-
-<a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img><input><kbd><label><map><object><q><samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var>
-
-***> Block level elements in HTML:
-
-<address><article><aside><blockquote><canvas><dd><div><dl><dt><fieldset><figcaption><figure><footer><form><h1>-<h6><header><hr><li><main><nav><noscript><ol><output><p><pre><section><table><tfoot><ul><video>
-
-********************
-HTML Grouping Tags
-
-***> THE <div> Element:
-
-The <div> element is often used as a container for other HTML elements.
-
-The <div> element has no required attributes, but style, class and id are common.
-
-***> THE <span> Element:
-
-The <span> element is often used as a container for some text.
-
-The <span> element has no required attributes, but style, class and id are common.
-===========================================================*/
-/*======================================================
-                    General CSS
-=======================================================*/
 
 html,
 body {
@@ -89,7 +46,7 @@ h2 {
 .content-sub-title h3 {
     font-size: 20px;
     font-weight: bold;
-    font-style: italic;
+    
     text-align: center;
     margin: 0 0 30px 0;
     /* Separates <div> from other <div> content */
@@ -362,10 +319,12 @@ h2 {
     margin: 0 0 30px 0;
 }
 
-#about-description {
-    margin-bottom: 30px;
-    /* In Chrome Inspect, all other values were found 0 except for bottom margin of 10. We need more. So changed it here. */
+#about-description p {
+    text-align: justify; /* Justify the text */
+    line-height: 25px;   /* Maintain your existing line-height */
+    margin-bottom: 30px; /* Keep the margin as you previously defined */
 }
+
 
 /*======================================================
                         WORK
@@ -847,7 +806,7 @@ form .form-controller {
 
 /* For transparent background on top navigation */
 .vesco-top-navbar {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(245 244 244);
     /*background-color: #fff;*/
     padding: 7px 0;
 }
