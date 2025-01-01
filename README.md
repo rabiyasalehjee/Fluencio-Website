@@ -6,9 +6,10 @@ Welcome to the Fluencio Responsive Website repository! This website includes CSS
 
 Fluencio is a responsive website designed to showcase various modern web development techniques. The site features animations, a parallax effect, a carousel, and a sticky navigation bar, making it a great example of a dynamic and engaging web experience.
 
-## Screenshots
+## Website Demo
 
-Here’s a screenshot of the homepage:
+Here’s the demo website: [Fluencio Website Demo](https://fluencio-website.vercel.app/)
+
 
 ![Fluencio Homepage](img/website-screenshot.png)
 
